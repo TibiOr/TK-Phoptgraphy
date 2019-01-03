@@ -1,0 +1,41 @@
+<header>
+    <div class="main-logo">
+        <a href="index.html" class="circle">
+           <span class="logo">T&K</span>
+           <img src="../assets/img/color.png" />
+        </a>
+        <div>
+            <a href="index.html">
+                <span>Photography</span>
+                <span class="signature">Tibi & Krisztina Orban</span>
+            </a>
+        </div>
+    </div>
+    <nav role="navigation" class="nav">
+        <div class="mobile-menu hide-for-large">
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="cross">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="menu align-right">
+            <li {{#ifpage 'index'}}class="selected"{{/ifpage}}>
+                <a href=index.html data-link="home">Home</a>
+            </li>
+            <li {{#ifpage 'about'}}class="selected"{{/ifpage}}>
+                <a href="#" data-link="about">About</a>
+            </li>
+            <li {{#ifpage 'portofolio'}}class="selected"{{/ifpage}}>
+                <a href="#" data-link="portofolio">Portofolio</a>
+            </li>
+            <li {{#ifpage 'contact'}}class="selected"{{/ifpage}}>
+                <a href="#" data-link="contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
