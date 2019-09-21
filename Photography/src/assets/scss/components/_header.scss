@@ -181,6 +181,7 @@ nav {
             background-color: $white;
             box-shadow: 5px 5px 10px 1px #ccc;
             transition: max-height ease-in 800ms;
+            z-index: 1;
 
             li {
                 justify-content: flex-start;
@@ -241,12 +242,13 @@ nav {
 }
 
 .main-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    //display: flex;
+    text-align: center;
 
     img {
-        width: 100%;
+        width: auto;
+        height: 250px;
+        margin: 1px;
     }
 }
 
@@ -278,7 +280,7 @@ nav {
             display: flex;
             box-shadow: none;
 
-            li.selcted {
+            li.selected {
                 border: 1px solid $black;
             }
         }
@@ -296,5 +298,11 @@ nav {
                 }
             }
         }
+    }
+
+    .main-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
